@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="fonts/iconfont.css">
+    <style>
+        html {
+            font-size: calc(100/750*100vw);
+        }
+
+        @media screen and (min-width:750px) {
+            html {
+                font-size: 50px;
+            }
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            font-size: .28rem;
+            list-style: none;
+            box-sizing: border-box;
+        }
+
+        .wrap,
+        body,
+        html {
+            height: 100%;
+
+        }
+
+        .wrap {
+            display: flex;
+            flex-direction: column;
+        }
+
+        section {
+            flex: 1;
+            overflow-y: scroll;
+            background: #d4d4d4;
+        }
+
+        header {
+            line-height: .82rem;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 .3rem;
+
+        }
+
+        header span,
+        header i.icon {
+            color: #999;
+            font-size: .4rem;
+        }
+
+        dl {
+            display: flex;
+            height: 2rem;
+            margin: .24rem 0 .01rem;
+            background: #fff;
+            align-items: center;
+        }
+
+        dl dt i.icon {
+            width: 1.3rem;
+            height: 1.3rem;
+            border-radius: 50%;
+            line-height: 1.3rem;
+            text-align: center;
+            font-size: .8rem;
+            background: #d4d4d4;
+            color: #999;
+            margin: 0 .4rem;
+            display: inline-block;
+        }
+
+        li {
+            line-height: 1.26rem;
+            padding-left: 1.2rem;
+            background: #fff;
+            position: relative;
+        }
+
+        li p {
+            display: flex;
+            justify-content: space-between;
+            padding-right: .3rem;
+        }
+
+        li p span {
+            color: #999;
+        }
+
+        li:not(:last-child) p {
+            border-bottom: 1px solid #ccc;
+        }
+
+        li i.icon {
+            position: absolute;
+            left: .24rem;
+            top: 0rem;
+            font-size: .45rem;
+        }
+
+        li:nth-of-type(1) i.icon {
+            color: orange;
+        }
+
+        li:nth-of-type(2) i.icon {
+            color: #ff0000;
+        }
+
+        li:nth-of-type(3) i.icon {
+            color: limegreen;
+        }
+
+        li:nth-of-type(4) i.icon {
+            color: skyblue;
+        }
+
+        footer {
+            color: #fff;
+            background: #333;
+            line-height: 2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <span><i class="icon iconfont icon-chevron-thin-left"></i></span>
+            <span>我的</span>
+            <span></span>
+        </header>
+        <section>
+            <dl class="usere">
+                <dt><i class="icon iconfont icon-wode"></i></dt>
+                <dd>请点击登录您的小米账号</dd>
+            </dl>
+            <ul class="hand">
+                <li>
+                    <i class="icon iconfont icon-05"></i>
+                    <p><span>播放历史</span><span>&gt;</span></p>
+                </li>
+                <li>
+                    <i class="icon iconfont icon-shoucang1"></i>
+                    <p><span>播放历史</span><span>&gt;</span></p>
+                </li>
+                <li>
+                    <i class="icon iconfont icon-yibangding"></i>
+                    <p><span>播放历史</span><span>&gt;</span></p>
+                </li>
+                <li>
+                    <i class="icon iconfont icon-shezhi1"></i>
+                    <p><span>播放历史</span><span>&gt;</span></p>
+                </li>
+            </ul>
+        </section>
+        <footer>
+            <div class="msg">
+                <h4>请先连接设备</h4>
+                <p>当前wifi:teacher</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
