@@ -1,0 +1,70 @@
+html {
+  font-size: calc(100/350*100vw);
+}
+
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 100px;
+  }
+}
+
+* {
+  font-size: .1rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+form {
+  margin: .3rem .15rem 0;
+}
+
+form label {
+  margin-bottom: .2rem;
+  height: .32rem;
+  display: flex;
+}
+
+form label:nth-of-type(1) button {
+  background: #e0e0e0;
+  color: #fff;
+}
+
+form label:nth-of-type(2) button {
+  background: #1f5d9b;
+  color: #fff;
+}
+
+form label:nth-of-type(3) button {
+  background: #8da245;
+  color: #fff;
+}
+
+form label:nth-of-type(4) button {
+  background: #ac1b5c;
+  color: #fff;
+}
+
+form label:nth-of-type(5) button {
+  background: #db5206;
+  color: #fff;
+}
+
+form label button {
+  width: .8rem;
+  text-align: center;
+  border-radius: 0 .05rem .05rem 0;
+  border: solid thin #e1e1e1;
+  box-shadow: 0 0 .05rem #f4f4f4 inset;
+  outline: none;
+}
+
+form label input {
+  flex: 1;
+  border: solid thin #e1e1e1;
+  border-radius: .05rem 0 0 .05rem;
+  box-shadow: 0 0 .05rem #f4f4f4;
+  text-indent: .1rem;
+  outline: none;
+}
